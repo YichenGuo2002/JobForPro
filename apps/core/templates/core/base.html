@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <title>JobForPro</title>
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="{% url 'frontpage' %}">
+                <strong>JobForPro</strong>
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+        </nav>
+        <!--End Navbar-->
+
+        <!--Main Content-->
+        <section class="section">
+            {% block content %}
+            {% endblock %}
+        </section>
+        <!--End Main Content-->
+    </body>
+</html>
